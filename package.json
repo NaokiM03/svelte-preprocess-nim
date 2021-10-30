@@ -1,0 +1,42 @@
+{
+  "name": "svelte-preprocess-nim",
+  "version": "1.0.0",
+  "description": "A Svelte Preprocessor to compile nim",
+  "author": "NaokiM03",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NaokiM03/svelte-preprocess-nim.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NaokiM03/svelte-preprocess-nim/issues"
+  },
+  "homepage": "https://github.com/NaokiM03/svelte-preprocess-nim#readme",
+  "keywords": [
+    "svelte",
+    "svelte-preprocess",
+    "nim"
+  ],
+  "main": "dist/index.cjs",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "node bin/build.js",
+    "type": "tsc"
+  },
+  "exports": {
+    ".": "./dist/index.cjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "*.d.ts",
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "@types/tmp": "^0.2.2",
+    "@types/which": "^2.0.1",
+    "esbuild": "^0.13.10",
+    "tmp": "^0.2.1",
+    "which": "^2.0.2"
+  }
+}
